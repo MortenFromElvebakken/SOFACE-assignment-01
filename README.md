@@ -84,6 +84,7 @@ A central goal of this course is to improve your ability to write high quality a
 
 For each exercise you are provided a set of unit tests as part of the handout that can be run to verify which parts of your code works and which parts do not.
 There are two ways to do this. 
+
 One way in Visual studio code, in terminal input following commands:
 cd build
 ctest
