@@ -23,16 +23,18 @@ python # python3 on most unix systems
 ```
 
 Make sure the following programs are installed and can be accessed from the systems path:
+(I will be working in visual studio code, with clang compiler..)
 
 - C/C++ compiler such as [gcc](https://gcc.gnu.org/), [msvc](https://visualstudio.microsoft.com/vs/features/cplusplus/) or [clang](https://clang.llvm.org/)
 - [CMake](https://cmake.org/)
 - [Python](https://www.python.org/)
 - [Git](https://git-scm.com/downloads)
+- 
 - [Clang-Tidy\*](https://clang.llvm.org/extra/clang-tidy/)
 - [CppCheck\*](http://cppcheck.sourceforge.net/)
 - [Valgrind\*](https://valgrind.org/)
 
-Dependencies marked with '\*' are optional, but installing these are recommended as they will be used to check the code you submit.
+Dependencies marked with '\*' are optional, but installing these are recommended as they will be used to check the code you submit.(however valgrind for memory leak checks is not for windows.)
 
 On Ubuntu you can install these using:
 
@@ -81,6 +83,13 @@ Source and header files are stored in the respective folders:
 A central goal of this course is to improve your ability to write high quality and 'correct' code. Part of this effort is an increased emphasis on systematic testing.
 
 For each exercise you are provided a set of unit tests as part of the handout that can be run to verify which parts of your code works and which parts do not.
+There are two ways to do this. 
+One way in Visual studio code, in terminal input following commands:
+cd build
+ctest
+![](ctest.png)
+
+One way if you installed the optional dependencies and are working on a linux environment:
 To test your code run the `autograde.py` script using python:
 
 ```bash
